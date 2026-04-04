@@ -9,3 +9,6 @@ export type { } from './BenefitsSection';
 
 export { CTASection } from './CTASection';
 export type { } from './CTASection';
+
+export { DestinationCard } from './DestinationCard';
+export type { } from './DestinationCard';

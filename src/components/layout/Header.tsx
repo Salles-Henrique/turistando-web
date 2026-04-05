@@ -21,29 +21,29 @@ export function Header() {
               href="/trips"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              Explore Trips
+              Explorar Viagens
             </Link>
             <Link
               href="/destinations"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              Destinations
+              Destinos
             </Link>
             <Link
               href="/about"
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
-              About
+              Sobre
             </Link>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
             <button className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Sign In
+              Entrar
             </button>
             <button className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all font-medium">
-              Get Started
+              Começar
             </button>
           </div>
         </div>

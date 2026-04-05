@@ -14,49 +14,49 @@ import {
 } from '@/components/common/Card';
 
 /**
- * COMPONENTS SHOWCASE PAGE
+ * PÁGINA DE DEMONSTRAÇÃO DE COMPONENTES
  * 
- * This file demonstrates all available TURISTANDO design system components
- * with practical examples following the brand guidelines.
+ * Este arquivo demonstra todos os componentes disponíveis do sistema de design TURISTANDO
+ * com exemplos práticos seguindo as diretrizes da marca.
  */
 
 export default function ComponentShowcase() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white px-6 py-20">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+        {/* Cabeçalho */}
         <section className="mb-20">
           <h1 className="text-7xl font-heading text-primary mb-4">
-            Components Showcase
+            Demonstração de Componentes
           </h1>
           <p className="text-xl text-gray-600">
-            TURISTANDO design system in action
+            Sistema de design TURISTANDO em ação
           </p>
         </section>
 
-        {/* Button Variants */}
+        {/* Variantes de Botão */}
         <section className="mb-20">
           <h2 className="text-4xl font-heading text-primary mb-8">
-            Button Component
+            Componente Botão
           </h2>
 
-          {/* Primary Buttons */}
+          {/* Botões Primários */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Primary Variant (Main CTAs)
+              Variante Primária (CTAs Principais)
             </h3>
             <ButtonGroup>
               <Button variant="primary" size="sm">
-                Small Button
+                Botão Pequeno
               </Button>
               <Button variant="primary" size="md">
-                Medium Button
+                Botão Médio
               </Button>
               <Button variant="primary" size="lg">
-                Large Button
+                Botão Grande
               </Button>
               <Button variant="primary" size="xl">
-                Extra Large
+                Extra Grande
               </Button>
             </ButtonGroup>
           </div>
@@ -100,62 +100,62 @@ export default function ComponentShowcase() {
             </ButtonGroup>
           </div>
 
-          {/* Outline Buttons */}
+          {/* Botões com Contorno */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Outline Variant (Alternative Primary)
+              Variante Contorno (Primário Alternativo)
             </h3>
             <ButtonGroup>
               <Button variant="outline" size="md">
-                Outline Button
+                Botão com Contorno
               </Button>
               <Button variant="outline" size="lg">
-                Larger Outline
+                Contorno Maior
               </Button>
             </ButtonGroup>
           </div>
 
-          {/* Ghost Buttons */}
+          {/* Botões Fantasma */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Ghost Variant (Minimal)
+              Variante Fantasma (Minimalista)
             </h3>
             <ButtonGroup>
               <Button variant="ghost" size="md">
-                Ghost Button
+                Botão Fantasma
               </Button>
             </ButtonGroup>
           </div>
 
-          {/* States */}
+          {/* Estados */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Button States
+              Estados do Botão
             </h3>
             <ButtonGroup>
               <Button variant="primary" size="lg">
-                Normal State
+                Estado Normal
               </Button>
               <Button variant="primary" size="lg" disabled>
-                Disabled State
+                Estado Desabilitado
               </Button>
               <Button variant="primary" size="lg" isLoading>
-                Loading State
+                Estado de Carregamento
               </Button>
             </ButtonGroup>
           </div>
 
-          {/* Full Width */}
+          {/* Largura Total */}
           <div>
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Full Width (Mobile)
+              Largura Total (Móvel)
             </h3>
             <Button
               variant="primary"
               size="lg"
               fullWidth
             >
-              Full Width Button
+              Botão Largura Total
             </Button>
           </div>
         </section>
@@ -163,138 +163,138 @@ export default function ComponentShowcase() {
         {/* Card Variants */}
         <section className="mb-20">
           <h2 className="text-4xl font-heading text-primary mb-8">
-            Card Component
+            Componente Card
           </h2>
 
-          {/* Default Card */}
+          {/* Card Padrão */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Default Variant
+              Variante Padrão
             </h3>
             <Card>
               <CardHeader>
-                <CardTitle>Default Card</CardTitle>
-                <CardSubtitle>With border and subtle shadow</CardSubtitle>
+                <CardTitle>Card Padrão</CardTitle>
+                <CardSubtitle>Com borda e sombra sutil</CardSubtitle>
               </CardHeader>
               <CardBody>
                 <p className="text-gray-600">
-                  This is the basic card variant, perfect for general content
-                  display with a professional appearance.
+                  Esta é a variante básica do card, perfeita para exibir
+                  conteúdo geral com uma aparência profissional.
                 </p>
               </CardBody>
               <CardFooter>
                 <Button variant="outline" size="sm">
-                  Learn More
+                  Saiba Mais
                 </Button>
               </CardFooter>
             </Card>
           </div>
 
-          {/* Elevated Card */}
+          {/* Card Elevado */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Elevated Variant (Floating)
+              Variante Elevada (Flutuante)
             </h3>
             <Card variant="elevated">
               <CardHeader>
-                <CardTitle>Elevated Card</CardTitle>
-                <CardSubtitle>With strong shadow for emphasis</CardSubtitle>
+                <CardTitle>Card Elevado</CardTitle>
+                <CardSubtitle>Com sombra forte para destaque</CardSubtitle>
               </CardHeader>
               <CardBody>
                 <p className="text-gray-600">
-                  Use this variant for featured content that needs to stand out
-                  with a floating appearance.
+                  Use esta variante para conteúdo em destaque que precisa se
+                  destacar com uma aparência flutuante.
                 </p>
               </CardBody>
             </Card>
           </div>
 
-          {/* Outlined Card */}
+          {/* Card com Contorno */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Outlined Variant (Emphasis)
+              Variante com Contorno (Énfase)
             </h3>
             <Card variant="outlined">
               <CardHeader>
-                <CardTitle>Outlined Card</CardTitle>
-                <CardSubtitle>Primary color border for focus</CardSubtitle>
+                <CardTitle>Card com Contorno</CardTitle>
+                <CardSubtitle>Borda com cor primária para foco</CardSubtitle>
               </CardHeader>
               <CardBody>
                 <p className="text-gray-600">
-                  Perfect for highlighting important cards or featured sections
-                  with the primary brand color.
+                  Perfeito para destacar cards importantes ou seções
+                  em destaque com a cor de marca primária.
                 </p>
               </CardBody>
             </Card>
           </div>
 
-          {/* Accent Card */}
+          {/* Card de Énfase */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Accent Variant (Special)
+              Variante Énfase (Especial)
             </h3>
             <Card variant="accent">
               <CardHeader>
-                <CardTitle>Accent Card</CardTitle>
-                <CardSubtitle>Light background with accent color</CardSubtitle>
+                <CardTitle>Card de Énfase</CardTitle>
+                <CardSubtitle>Fundo claro com cor de destaque</CardSubtitle>
               </CardHeader>
               <CardBody>
                 <p className="text-gray-600">
-                  Use this for special promotions, announcements, or featured
-                  content.
+                  Use esta opção para promoções especiais, anúncios ou
+                  conteúdo em destaque.
                 </p>
               </CardBody>
             </Card>
           </div>
 
-          {/* Card with Image */}
+          {/* Card com Imagem */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Card with Image
+              Card com Imagem
             </h3>
             <Card>
               <CardImage
                 src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=200&fit=crop"
-                alt="Destination"
+                alt="Destino"
                 height="h-56"
               />
               <CardHeader>
-                <CardTitle>Paris, France</CardTitle>
-                <CardSubtitle>City of Light & Romance</CardSubtitle>
+                <CardTitle>Paris, França</CardTitle>
+                <CardSubtitle>Cidade da Luz e Romance</CardSubtitle>
               </CardHeader>
               <CardBody>
                 <p className="text-gray-600 mb-4">
-                  Discover the beauty, culture, and cuisine of Paris.
+                  Descubra a beleza, cultura e culinária de Paris.
                 </p>
                 <div className="flex gap-6">
-                  <CardStat label="Rating" value="4.8" icon="⭐" />
-                  <CardStat label="Reviews" value="2,341" icon="💬" />
-                  <CardStat label="Price" value="$1,299" icon="💰" />
+                  <CardStat label="Classificação" value="4.8" icon="⭐" />
+                  <CardStat label="Avaliações" value="2.341" icon="💬" />
+                  <CardStat label="Preço" value="R$ 1.299" icon="💰" />
                 </div>
               </CardBody>
               <CardFooter>
                 <ButtonGroup orientation="horizontal">
                   <Button variant="outline" fullWidth>
-                    View Details
+                    Ver Detalhes
                   </Button>
                   <Button variant="primary" fullWidth>
-                    Book Now
+                    Reservar Agora
                   </Button>
                 </ButtonGroup>
               </CardFooter>
             </Card>
           </div>
 
-          {/* Interactive Card */}
+          {/* Card Interativo */}
           <div className="mb-12">
             <h3 className="text-2xl font-heading text-gray-900 mb-6">
-              Interactive Card (Hoverable)
+              Card Interativo (Hover)
             </h3>
             <Card hoverable clickable>
               <CardBody>
                 <p className="text-gray-600">
-                  Hover over this card to see the interactive state with shadow
-                  and color changes.
+                  Passe o mouse sobre este card para ver o estado interativo
+                  com mudanças de sombra e cor.
                 </p>
               </CardBody>
             </Card>

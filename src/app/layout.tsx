@@ -16,27 +16,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Turistando - Discover & Book Amazing Travel Experiences',
+  title: 'Turistando - Descubra e Reserve Experiências de Viagem Incríveis',
   description:
-    'Explore destinations around the world and book your next adventure with Turistando. Find flights, hotels, and travel packages all in one place.',
+    'Explore destinos ao redor do mundo e reserve sua próxima aventura com Turistando. Encontre voos, hotéis e pacotes de viagem em um único lugar.',
   keywords: [
-    'travel',
-    'booking',
-    'destinations',
-    'trips',
-    'vacations',
-    'hotels',
-    'flights',
+    'viagem',
+    'reserva',
+    'destinos',
+    'viagens',
+    'férias',
+    'hotéis',
+    'voos',
   ],
-  authors: [{ name: 'Turistando Team' }],
+  authors: [{ name: 'Equipe Turistando' }],
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'pt_BR',
     url: 'https://turistando.com',
     siteName: 'Turistando',
-    title: 'Turistando - Discover & Book Amazing Travel Experiences',
+    title: 'Turistando - Descubra e Reserve Experiências de Viagem Incríveis',
     description:
-      'Explore destinations around the world and book your next adventure.',
+      'Explore destinos ao redor do mundo e reserve sua próxima aventura.',
   },
 };
 

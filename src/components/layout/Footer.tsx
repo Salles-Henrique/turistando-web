@@ -13,49 +13,49 @@ export function Footer() {
           <div>
             <p className="font-bold text-white text-lg mb-4">Turistando</p>
             <p className="text-sm text-gray-400">
-              Discover and book amazing travel experiences around the world.
+              Descubra e reserve experiências de viagem incríveis em todo o mundo.
             </p>
           </div>
 
-          {/* Explore */}
+          {/* Explorar */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Explore</h3>
+            <h3 className="font-semibold text-white mb-4">Explorar</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/trips" className="text-sm hover:text-white transition-colors">
-                  All Trips
+                  Todas as Viagens
                 </Link>
               </li>
               <li>
                 <Link href="/destinations" className="text-sm hover:text-white transition-colors">
-                  Destinations
+                  Destinos
                 </Link>
               </li>
               <li>
                 <Link href="/guides" className="text-sm hover:text-white transition-colors">
-                  Travel Guides
+                  Guias de Viagem
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Suporte */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Support</h3>
+            <h3 className="font-semibold text-white mb-4">Suporte</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/help" className="text-sm hover:text-white transition-colors">
-                  Help Center
+                  Centro de Ajuda
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-sm hover:text-white transition-colors">
-                  Contact Us
+                  Contate-nos
                 </Link>
               </li>
               <li>
                 <Link href="/faq" className="text-sm hover:text-white transition-colors">
-                  FAQ
+                  Perguntas Frequentes
                 </Link>
               </li>
             </ul>
@@ -67,17 +67,17 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy" className="text-sm hover:text-white transition-colors">
-                  Privacy Policy
+                  Política de Privacidade
                 </Link>
               </li>
               <li>
                 <Link href="/terms" className="text-sm hover:text-white transition-colors">
-                  Terms of Service
+                  Termos de Serviço
                 </Link>
               </li>
               <li>
                 <Link href="/cookies" className="text-sm hover:text-white transition-colors">
-                  Cookie Policy
+                  Política de Cookies
                 </Link>
               </li>
             </ul>
@@ -88,7 +88,7 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              &copy; {currentYear} Turistando. All rights reserved.
+              &copy; {currentYear} Turistando. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

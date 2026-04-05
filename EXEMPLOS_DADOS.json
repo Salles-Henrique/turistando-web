@@ -1,0 +1,327 @@
+{
+  "titulo": "Exemplos de Formato de Dados - Turistando",
+  "descricao": "Exemplos práticos de como estruturar pacotes de viagem",
+
+  "exemplo_minimo": {
+    "id": "99",
+    "title": "Bahia - Morro de São Paulo",
+    "location": "Morro de São Paulo",
+    "country": "Brazil",
+    "description": "Praia paradisíaca sem carros, apenas trilhas e areia",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+    "price": 750,
+    "rating": 4.6,
+    "reviews": 156,
+    "duration": 3,
+    "category": "beach"
+  },
+
+  "exemplo_com_desconto": {
+    "id": "100",
+    "title": "São Miguel dos Milagres - Beach Luxury",
+    "location": "Maceió",
+    "country": "Brazil",
+    "description": "Piscinas naturais e snorkel entre corais e peixes coloridos",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    "price": 1100,
+    "originalPrice": 1500,
+    "rating": 4.8,
+    "reviews": 342,
+    "duration": 5,
+    "category": "beach",
+    "desconto_percentual": 26.67
+  },
+
+  "exemplo_com_hotel": {
+    "id": "101",
+    "title": "Lençóis Maranhenses - Adventure Package",
+    "location": "Barreirinhas",
+    "country": "Brazil",
+    "description": "Lagoas turquesas, dunas brancas e trilhas pela natureza selvagem",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    "price": 1280,
+    "originalPrice": 1850,
+    "rating": 4.9,
+    "reviews": 267,
+    "duration": 5,
+    "category": "adventure",
+    
+    "hotel": {
+      "name": "Pousada Lenções do Sonho",
+      "stars": 4,
+      "amenities": [
+        "WiFi Grátis",
+        "Piscina com Borda Infinita",
+        "Restaurante com Culinária Local",
+        "Passeios Diários Incluso",
+        "Spa com Massagem",
+        "Bar com Varanda Panorâmica"
+      ],
+      "checkIn": "15:00",
+      "checkOut": "11:00",
+      "meals": "full-board"
+    },
+
+    "activities": [
+      {
+        "name": "Passeio Lagoa Azul + Rio Preguiça",
+        "duration": "8h (turno inteiro)",
+        "price": 0,
+        "included": true
+      },
+      {
+        "name": "Aula de Slackline no Deserto",
+        "duration": "2h",
+        "price": 180,
+        "included": false
+      },
+      {
+        "name": "Voo de Drone + Foto Aérea",
+        "duration": "1h",
+        "price": 150,
+        "included": false
+      }
+    ],
+
+    "included": [
+      "5 noites em Pousada 4 Estrelas",
+      "Todas as refeições (café, almoço, jantar)",
+      "Passeio Lagoa Azul + Rio Preguiça",
+      "Passeio ao Pôr do Sol em Dunas",
+      "Transfer Aeroporto ↔ Pousada",
+      "Agua Mineral na Pousada",
+      "Mapa com Trilhas Recomendadas"
+    ],
+
+    "notIncluded": [
+      "Voos Aéreos",
+      "Atividades Extras",
+      "Bebidas Alcoólicas",
+      "Seguro Viagem"
+    ]
+  },
+
+  "exemplo_city_tour": {
+    "id": "102",
+    "title": "São Paulo - VIP City Experience",
+    "location": "São Paulo",
+    "country": "Brazil",
+    "description": "Museus internacionais, gastronomia de classe mundial e vida noturna vibrante",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=600&fit=crop",
+    "price": 1450,
+    "originalPrice": 1950,
+    "rating": 4.7,
+    "reviews": 523,
+    "duration": 4,
+    "category": "city",
+
+    "hotel": {
+      "name": "Fasano São Paulo",
+      "stars": 5,
+      "amenities": [
+        "Concierge 24/7",
+        "Spa de Classe Mundial",
+        "Restaurante Michelin Star",
+        "Piscina no Rooftop",
+        "Ginásio Premium",
+        "Room Service 24/7"
+      ],
+      "checkIn": "14:00",
+      "checkOut": "12:00",
+      "meals": "breakfast"
+    },
+
+    "activities": [
+      {
+        "name": "Tour Museus (MASP + Pinacoteca)",
+        "duration": "6h",
+        "price": 0,
+        "included": true
+      },
+      {
+        "name": "Jantar Tradicional na Vila Madalena",
+        "duration": "3h",
+        "price": 380,
+        "included": false
+      },
+      {
+        "name": "Show no Theatro Municipal",
+        "duration": "2h",
+        "price": 250,
+        "included": false
+      }
+    ],
+
+    "included": [
+      "3 noites em Hotel 5 Estrelas",
+      "Café da Manhã Gourmet",
+      "City Tour + 2 Museus Principais",
+      "Transfer Airport VIP",
+      "Welcome Drink no Hotel"
+    ],
+
+    "notIncluded": [
+      "Voos",
+      "Refeições Adicionais",
+      "Ingressos para Atrações Extras"
+    ]
+  },
+
+  "categorias_validas": [
+    {
+      "id": "beach",
+      "nome": "Praia",
+      "descricao": "Destinos com praias, resorts costeiros, mergulho",
+      "exemplos": ["Bali", "Maldivas", "Bahia", "Rio de Janeiro"]
+    },
+    {
+      "id": "mountain",
+      "nome": "Montanha",
+      "descricao": "Trilhas, escaladas, paisagens montanhosas, neve",
+      "exemplos": ["Swiss Alps", "Iceland", "Patagônia"]
+    },
+    {
+      "id": "city",
+      "nome": "Cidade",
+      "descricao": "Tours urbanos, museus, gastronomia, vida noturna",
+      "exemplos": ["Paris", "Tokyo", "São Paulo", "Barcelona"]
+    },
+    {
+      "id": "adventure",
+      "nome": "Aventura",
+      "descricao": "Esportes radicais, trilhas extremas, experiências imersivas",
+      "exemplos": ["New Zealand", "Iceland", "Lençóis Maranhenses"]
+    }
+  ],
+
+  "guia_precos_recomendados": {
+    "budget": {
+      "descricao": "Pacotes econômicos, hospedagens 2-3 estrelas",
+      "preco_minimo": 500,
+      "preco_maximo": 1000,
+      "duracao_tipica": "3-4 dias",
+      "exemplos": ["Thai Temple Tour -> R$ 220", "Barcelona -> R$ 320"]
+    },
+    "mid_range": {
+      "descricao": "Pacotes padrão, hospedagens 3-4 estrelas",
+      "preco_minimo": 1000,
+      "preco_maximo": 1800,
+      "duracao_tipica": "5-6 dias",
+      "exemplos": ["Paris -> R$ 450", "Dubai -> R$ 480"]
+    },
+    "premium": {
+      "descricao": "Pacotes luxuosos, hospedagens 4-5 estrelas, all-inclusive",
+      "preco_minimo": 1800,
+      "preco_maximo": 3500,
+      "duracao_tipica": "7+ dias",
+      "exemplos": ["Maldivas -> R$ 620", "Lençóis Maranhenses -> R$ 1280"]
+    }
+  },
+
+  "validacoes_importantes": {
+    "id": {
+      "tipo": "string",
+      "requerido": true,
+      "regra": "Deve ser único, nunca repetir",
+      "exemplo": "1, 2, 3, 'abc123'"
+    },
+    "title": {
+      "tipo": "string",
+      "requerido": true,
+      "regra": "Máximo 70 caracteres, deve ser atrativo",
+      "exemplo": "Paris Romantic Getaway, Bali Beach Paradise"
+    },
+    "location": {
+      "tipo": "string",
+      "requerido": true,
+      "regra": "Cidade/região específica",
+      "exemplo": "Paris, Bali, Rio de Janeiro"
+    },
+    "country": {
+      "tipo": "string",
+      "requerido": true,
+      "regra": "País em inglês ou português",
+      "exemplo": "France, Indonesia, Brazil"
+    },
+    "description": {
+      "tipo": "string",
+      "requerido": true,
+      "regra": "60-120 caracteres, descritivo mas conciso",
+      "exemplo": "Explore a cidade do amor com monumentos icônicos"
+    },
+    "image": {
+      "tipo": "string (URL)",
+      "requerido": true,
+      "regra": "URL válida, preferencialmente w>=800px",
+      "exemplo": "https://images.unsplash.com/..."
+    },
+    "price": {
+      "tipo": "number",
+      "requerido": true,
+      "regra": "Inteiro positivo, será exibido como R$",
+      "exemplo": 280, 450, 1500
+    },
+    "originalPrice": {
+      "tipo": "number",
+      "requerido": false,
+      "regra": "Deve ser > price para mostrar desconto",
+      "exemplo": 380, 580, 2000
+    },
+    "rating": {
+      "tipo": "number",
+      "requerido": true,
+      "regra": "Entre 0 e 5, com 1 casa decimal",
+      "exemplo": 4.8, 4.9, 4.7
+    },
+    "reviews": {
+      "tipo": "number",
+      "requerido": true,
+      "regra": "Inteiro positivo realista",
+      "exemplo": 100, 300, 500
+    },
+    "duration": {
+      "tipo": "number",
+      "requerido": true,
+      "regra": "Número de dias (3-14 típico)",
+      "exemplo": 3, 5, 7
+    },
+    "category": {
+      "tipo": "string (enum)",
+      "requerido": true,
+      "regra": "Deve ser: beach, mountain, city, adventure",
+      "exemplo": "beach"
+    }
+  },
+
+  "dicas_de_preenchimento": [
+    "Sempre traduza titles e descriptions para português",
+    "Use imagens de qualidade de sites como Unsplash",
+    "Preços devem ser realistas e competitivos",
+    "A maioria dos pacotes deve ter originalPrice (desconto atrai clientes)",
+    "Reviews > 200 parece mais legítimo",
+    "Rating 4.7+ é mais credível",
+    "Duração típica entre 4-7 dias",
+    "Escolha categoria que melhor descreve o pacote"
+  ],
+
+  "script_para_adicionar_rapido": {
+    "como": "Copie o exemplo abaixo e preencha com seus dados",
+    "exemplo": `
+// No fim do array destinationsData do arquivo src/data/destinations.ts
+{
+  id: '999',
+  title: 'SEU TITULO AQUI',
+  location: 'CIDADE',
+  country: 'PAIS',
+  description: 'SUA DESCRICAO AQUI (60-120 caracteres)',
+  image: 'URL DA IMAGEM',
+  price: 1000,           // Seu preço em R$
+  originalPrice: 1400,   // Opcional: preço antes do desconto
+  rating: 4.8,
+  reviews: 200,
+  duration: 5,
+  category: 'beach',     // beach | mountain | city | adventure
+},
+    `
+  }
+}

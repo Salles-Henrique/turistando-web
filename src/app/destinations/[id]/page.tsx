@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/common/Button';
+import { ReservationForm } from '@/components/forms/ReservationForm';
 import { destinationsData, type Destination } from '@/data/destinations';
 import { useState } from 'react';
 
@@ -19,7 +20,6 @@ interface DestinationDetailProps {
 export default function DestinationDetailPage({ params }: DestinationDetailProps) {
   const destination = destinationsData.find((d) => d.id === params.id);
   const [travelers, setTravelers] = useState(1);
-  const [showReservationForm, setShowReservationForm] = useState(false);
 
   if (!destination) {
     return (
@@ -290,57 +290,12 @@ export default function DestinationDetailPage({ params }: DestinationDetailProps
               </div>
 
               {/* Reserve Button and Form */}
-              {!showReservationForm ? (
-                <Button
-                  variant="primary"
-                  size="lg"
-                  fullWidth
-                  onClick={() => setShowReservationForm(true)}
-                >
-                  Reservar Agora
-                </Button>
-              ) : (
-                <form className="space-y-4">
-                  <input
-                    type="text"
-                    placeholder="Seu nome"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                  <input
-                    type="email"
-                    placeholder="seu@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="(11) 99999-9999"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-
-                  <div className="pt-2 space-y-2">
-                    <Button
-                      variant="primary"
-                      size="md"
-                      fullWidth
-                      onClick={(e) => {
-                        e.preventDefault();
-                        alert('Reserva enviada! Em breve entraremos em contato.');
-                        setShowReservationForm(false);
-                      }}
-                    >
-                      Confirmar Reserva
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="md"
-                      fullWidth
-                      onClick={() => setShowReservationForm(false)}
-                    >
-                      Cancelar
-                    </Button>
-                  </div>
-                </form>
-              )}
+              <ReservationForm
+                destinationTitle={destination.title}
+                onSuccess={(data) => {
+                  console.log('Reservation submitted:', data);
+                }}
+              />
 
               {/* Extra Info */}
               <div className="mt-6 pt-6 border-t border-gray-200 space-y-3 text-sm">

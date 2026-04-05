@@ -97,7 +97,7 @@ export function DestinationCard({
                 : 'bg-white/80 text-gray-600 hover:bg-white/95 hover:scale-110'
               }
             `}
-            aria-label={isFav ? 'Remove from favorites' : 'Add to favorites'}
+            aria-label={isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}
           >
             <svg
               className={`w-5 h-5 transition-transform duration-200 ${isFav ? 'scale-110' : ''}`}

@@ -322,13 +322,13 @@ export default function ComponentShowcase() {
                 />
                 <CardBody>
                   <h4 className="text-lg font-bold mb-2">
-                    Destination {index}
+                    Destino {index}
                   </h4>
                   <p className="text-gray-600 text-sm mb-4">
-                    Explore amazing places and create unforgettable memories
+                    Explore lugares incríveis e crie memórias inesquecíveis
                   </p>
                   <Button variant="outline" fullWidth size="sm">
-                    Explore
+                    Explorar
                   </Button>
                 </CardBody>
               </Card>

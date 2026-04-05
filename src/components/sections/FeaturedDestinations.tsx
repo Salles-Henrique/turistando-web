@@ -2,6 +2,7 @@
 
 import { Card, CardImage, CardBody, CardHeader, CardTitle, CardSubtitle, CardFooter } from '@/components/common/Card';
 import { Button } from '@/components/common/Button';
+import { useRouter } from 'next/navigation';
 import { ReactNode } from 'react';
 
 interface Destination {
@@ -31,10 +32,10 @@ export function FeaturedDestinations({
   subtitle = 'Explore alguns dos lugares mais procurados por nossos viajantes',
   destinations,
 }: FeaturedDestinationsProps) {
+  const router = useRouter();
+
   const handleDestinationClick = (id: string) => {
-    console.log('Destination clicked:', id);
-    // Router integration can be added here for navigation
-    // router.push(`/destinations/${id}`);
+    router.push(`/destinations/${id}`);
   };
 
   return (

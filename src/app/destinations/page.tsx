@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { DestinationCard } from '@/components/sections/DestinationCard';
 import { Button } from '@/components/common/Button';
 import {
@@ -18,6 +19,8 @@ import {
  * Responsive grid layout adapts to all screen sizes.
  */
 export default function DestinationsPage() {
+  const router = useRouter();
+
   // Filter state
   const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -120,9 +123,7 @@ export default function DestinationsPage() {
     searchQuery !== '';
 
   const handleViewDetails = (id: string) => {
-    console.log('View details for destination:', id);
-    // Navigate to destination details page
-    // router.push(`/destinations/${id}`);
+    router.push(`/destinations/${id}`);
   };
 
   return (

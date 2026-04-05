@@ -44,20 +44,20 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 hover:scale-[1.02] hover:-translate-y-0.5';
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      'bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-md hover:shadow-lg',
+      'bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-md hover:shadow-xl hover:shadow-primary/30',
     secondary:
-      'bg-secondary text-gray-900 hover:bg-secondary-dark focus:ring-secondary shadow-md hover:shadow-lg',
+      'bg-secondary text-gray-900 hover:bg-secondary-dark focus:ring-secondary shadow-md hover:shadow-xl hover:shadow-secondary/30',
     accent:
-      'bg-accent text-white hover:bg-accent-dark focus:ring-accent shadow-md hover:shadow-lg',
+      'bg-accent text-white hover:bg-accent-dark focus:ring-accent shadow-md hover:shadow-xl hover:shadow-accent/30',
     support:
-      'bg-support text-white hover:bg-support-dark focus:ring-support shadow-md hover:shadow-lg',
+      'bg-support text-white hover:bg-support-dark focus:ring-support shadow-md hover:shadow-xl hover:shadow-support/30',
     outline:
-      'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary',
-    ghost: 'text-primary hover:bg-primary/10 focus:ring-primary',
+      'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary hover:shadow-md',
+    ghost: 'text-primary hover:bg-primary/10 focus:ring-primary hover:shadow-sm',
   };
 
   const sizes: Record<ButtonSize, string> = {

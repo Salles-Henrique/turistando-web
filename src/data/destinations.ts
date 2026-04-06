@@ -33,21 +33,22 @@ export const destinationsData: Destination[] = [
     duration: 5,
     category: 'beach',
   },
-  /*
+  
   {
     id: '2',
-    title: 'Paris Romantic Getaway',
-    location: 'Paris',
-    country: 'France',
-    description: 'Explore the city of love with iconic landmarks',
-    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop',
-    price: 450,
-    originalPrice: 580,
+    title: 'Mistérios Eternos - Pirâmides de Gizé',
+    location: 'Gizé',
+    country: 'Egito',
+    description: 'Mergulhe na grandiozidade da civilização egípcia',
+    image: 'https://unsplash.com/pt-br/fotografias/fotografia-de-baixo-angulo-de-construcao-de-concreto-marrom-sob-o-ceu-azul-durante-o-dia-iuC3w8mLDcs',
+    price: 50,
+    originalPrice: 80,
     rating: 4.9,
     reviews: 521,
     duration: 4,
-    category: 'city',
+    category: 'Culture',
   },
+  /*
   {
     id: '3',
     title: 'Mountain Adventure - Swiss Alps',

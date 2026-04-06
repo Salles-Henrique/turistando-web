@@ -33,6 +33,7 @@ export const destinationsData: Destination[] = [
     duration: 5,
     category: 'beach',
   },
+  /*
   {
     id: '2',
     title: 'Paris Romantic Getaway',
@@ -105,7 +106,7 @@ export const destinationsData: Destination[] = [
   },
   {
     id: '7',
-    title: 'Dubai Luxury Experience',
+    title: 'carack',
     location: 'Dubai',
     country: 'UAE',
     description: 'Ultra-modern luxury in the desert oasis',
@@ -186,7 +187,7 @@ export const destinationsData: Destination[] = [
     reviews: 445,
     duration: 7,
     category: 'beach',
-  },
+  },*/
 ];
 
 // Get unique locations and categories for filters

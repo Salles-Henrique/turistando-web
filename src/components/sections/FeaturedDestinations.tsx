@@ -7,12 +7,17 @@ import { ReactNode } from 'react';
 
 interface Destination {
   id: string;
-  name: string;
+  title: string;
+  location?: string;
+  country?: string;
   description: string;
   image: string;
   rating: number;
   reviews: number;
   price: number;
+  originalPrice?: number;
+  duration?: number;
+  category?: string;
   icon?: ReactNode;
 }
 
@@ -64,14 +69,14 @@ export function FeaturedDestinations({
               {/* Destination Image */}
               <CardImage
                 src={destination.image}
-                alt={destination.name}
+                alt={destination.title}
                 height="h-48 sm:h-56"
               />
 
               {/* Card Content */}
               <CardBody className="pb-3">
                 <CardHeader className="pb-2 -mx-4 px-4 mb-3">
-                  <CardTitle className="text-lg md:text-xl">{destination.name}</CardTitle>
+                  <CardTitle className="text-lg md:text-xl">{destination.title}</CardTitle>
                   <CardSubtitle className="text-sm">{destination.description}</CardSubtitle>
                 </CardHeader>
 

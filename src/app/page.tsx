@@ -1,80 +1,8 @@
 import { HeroSection, FeaturedDestinations, BenefitsSection, CTASection } from '@/components/sections';
+import { destinationsData } from '@/data/destinations';
 
-// Mock destination data - Replace with real data from API
-const mockDestinations = [
-  {
-    id: '1',
-    name: 'Paris',
-    description: 'A cidade da luz e do amor',
-    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop',
-    rating: 4.8,
-    reviews: 2450,
-    price: 450,
-  },
-  {
-    id: '2',
-    name: 'Tokyo',
-    description: 'Tradição encontra modernidade',
-    image: 'https://images.unsplash.com/photo-1540959375944-7049f642e608?w=600&h=400&fit=crop',
-    rating: 4.9,
-    reviews: 1890,
-    price: 380,
-  },
-  {
-    id: '3',
-    name: 'Bali',
-    description: 'Praias paradisíacas e cultura vibrante',
-    image: 'https://images.unsplash.com/photo-1508522275700-162ee4be3fbb?w=600&h=400&fit=crop',
-    rating: 4.7,
-    reviews: 3200,
-    price: 220,
-  },
-  {
-    id: '4',
-    name: 'Nova York',
-    description: 'A cidade que nunca dorme',
-    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop',
-    rating: 4.6,
-    reviews: 4100,
-    price: 380,
-  },
-  {
-    id: '5',
-    name: 'Barcelona',
-    description: 'Arte, arquitetura e praia',
-    image: 'https://images.unsplash.com/photo-1562883676-8c6bffe67dfa?w=600&h=400&fit=crop',
-    rating: 4.8,
-    reviews: 2880,
-    price: 320,
-  },
-  {
-    id: '6',
-    name: 'Maldivas',
-    description: 'Água cristalina e resorts exclusivos',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-    rating: 4.9,
-    reviews: 1650,
-    price: 520,
-  },
-  {
-    id: '7',
-    name: 'Dubai',
-    description: 'Luxo e inovação no deserto',
-    image: 'https://images.unsplash.com/photo-1512453074622-c1c6e6ae95f5?w=600&h=400&fit=crop',
-    rating: 4.7,
-    reviews: 2340,
-    price: 400,
-  },
-  {
-    id: '8',
-    name: 'Rio de Janeiro',
-    description: 'Beleza natural do Brasil',
-    image: 'https://images.unsplash.com/photo-1563537348885-7be370b634b6?w=600&h=400&fit=crop',
-    rating: 4.6,
-    reviews: 3100,
-    price: 280,
-  },
-];
+// Use real destination data - first 8 destinations
+const mockDestinations = destinationsData.slice(0, 8);
 
 // Benefit items with icons
 const benefits = [

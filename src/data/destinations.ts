@@ -40,7 +40,7 @@ export const destinationsData: Destination[] = [
     location: 'Gizé',
     country: 'Egito',
     description: 'Mergulhe na grandiozidade da civilização egípcia',
-    image: 'https://unsplash.com/pt-br/fotografias/fotografia-de-baixo-angulo-de-construcao-de-concreto-marrom-sob-o-ceu-azul-durante-o-dia-iuC3w8mLDcs',
+    image: 'https://images.unsplash.com/photo-1584719866406-c76ddee48493?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: 50,
     originalPrice: 80,
     rating: 4.9,

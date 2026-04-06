@@ -42,7 +42,7 @@ export default function ComponentShowcase() {
 
           {/* Botões Primários */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Primária (CTAs Principais)
             </h3>
             <ButtonGroup>
@@ -63,7 +63,7 @@ export default function ComponentShowcase() {
 
           {/* Secondary Buttons */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Secondary Variant (Secondary Actions)
             </h3>
             <ButtonGroup>
@@ -78,7 +78,7 @@ export default function ComponentShowcase() {
 
           {/* Accent Buttons */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Accent Variant (Informational)
             </h3>
             <ButtonGroup>
@@ -90,7 +90,7 @@ export default function ComponentShowcase() {
 
           {/* Support Buttons */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Support Variant (Tertiary Actions)
             </h3>
             <ButtonGroup>
@@ -102,7 +102,7 @@ export default function ComponentShowcase() {
 
           {/* Botões com Contorno */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Contorno (Primário Alternativo)
             </h3>
             <ButtonGroup>
@@ -117,7 +117,7 @@ export default function ComponentShowcase() {
 
           {/* Botões Fantasma */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Fantasma (Minimalista)
             </h3>
             <ButtonGroup>
@@ -129,7 +129,7 @@ export default function ComponentShowcase() {
 
           {/* Estados */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Estados do Botão
             </h3>
             <ButtonGroup>
@@ -147,7 +147,7 @@ export default function ComponentShowcase() {
 
           {/* Largura Total */}
           <div>
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Largura Total (Móvel)
             </h3>
             <Button
@@ -168,7 +168,7 @@ export default function ComponentShowcase() {
 
           {/* Card Padrão */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Padrão
             </h3>
             <Card>
@@ -192,7 +192,7 @@ export default function ComponentShowcase() {
 
           {/* Card Elevado */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Elevada (Flutuante)
             </h3>
             <Card variant="elevated">
@@ -211,7 +211,7 @@ export default function ComponentShowcase() {
 
           {/* Card com Contorno */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante com Contorno (Énfase)
             </h3>
             <Card variant="outlined">
@@ -230,7 +230,7 @@ export default function ComponentShowcase() {
 
           {/* Card de Énfase */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Variante Énfase (Especial)
             </h3>
             <Card variant="accent">
@@ -249,7 +249,7 @@ export default function ComponentShowcase() {
 
           {/* Card com Imagem */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Card com Imagem
             </h3>
             <Card>
@@ -287,7 +287,7 @@ export default function ComponentShowcase() {
 
           {/* Card Interativo */}
           <div className="mb-12">
-            <h3 className="text-2xl font-heading text-gray-900 mb-6">
+            <h3 className="text-2xl font-heading text-primary pl-4 border-l-4 border-primary mb-6">
               Card Interativo (Hover)
             </h3>
             <Card hoverable clickable>

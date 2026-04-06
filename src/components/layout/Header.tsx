@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Header() {
   return (
@@ -9,9 +10,14 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-teal-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
-            </div>
+            <Image
+              src="/images/logos/logomarca.png"
+              alt="Turistando Logo"
+              width={64}
+              height={64}
+              className="h-16 w-auto"
+              priority
+            />
             <span className="font-bold text-xl text-gray-900">Turistando</span>
           </Link>
 

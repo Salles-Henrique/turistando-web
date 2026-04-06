@@ -98,7 +98,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
           <div className="lg:col-span-2">
             {/* Description */}
             <section className="mb-12">
-              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="font-heading text-3xl font-bold text-primary mb-6 pl-4 border-l-4 border-primary">
                 Sobre este destino
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -120,7 +120,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
 
             {/* Travel Information */}
             <section className="mb-12">
-              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="font-heading text-3xl font-bold text-primary mb-6 pl-4 border-l-4 border-primary">
                 Informações de Viagem
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -163,7 +163,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
 
             {/* Highlights */}
             <section className="mb-12">
-              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="font-heading text-3xl font-bold text-primary mb-6 pl-4 border-l-4 border-primary">
                 Destaques
               </h2>
               <ul className="space-y-3">
@@ -185,7 +185,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
 
             {/* Reviews Summary */}
             <section>
-              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="font-heading text-3xl font-bold text-primary mb-6 pl-4 border-l-4 border-primary">
                 O que dizem nossos viajantes
               </h2>
               <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-lg border border-gray-200">

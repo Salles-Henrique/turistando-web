@@ -54,7 +54,7 @@ export function BenefitsSection({
               </div>
 
               {/* Title */}
-              <h3 className="font-heading text-xl md:text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="font-heading text-xl md:text-2xl font-bold text-primary pl-4 border-l-4 border-primary mb-3">
                 {benefit.title}
               </h3>
 

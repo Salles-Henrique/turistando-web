@@ -21,21 +21,6 @@ export interface Destination {
 export const destinationsData: Destination[] = [
   {
     id: '1',
-    title: 'Paraíso Tropical - Bali Beach Resort',
-    location: 'Bali',
-    country: 'Indonesia',
-    description: 'Relaxation and adventure in a tropical paradise',
-    image: 'https://images.unsplash.com/photo-1508522275700-162ee4be3fbb?w=800&h=600&fit=crop',
-    price: 280,
-    originalPrice: 380,
-    rating: 4.8,
-    reviews: 342,
-    duration: 5,
-    category: 'beach',
-  },
-  
-  {
-    id: '2',
     title: 'Mistérios Eternos - Pirâmides de Gizé',
     location: 'Gizé',
     country: 'Egito',

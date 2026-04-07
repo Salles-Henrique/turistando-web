@@ -31,25 +31,26 @@ export function CTASection({
   };
 
   return (
-    <section className="w-full py-16 md:py-20 lg:py-24 bg-gradient-to-r from-primary via-primary-600 to-accent">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
+    <section className="w-full py-24 md:py-32 lg:py-40 bg-gradient-to-r from-primary via-primary-600 to-accent">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         {/* Title */}
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <h2 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
           {title}
         </h2>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
           {description}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button
             variant="primary"
             size="lg"
             onClick={handlePrimaryCta}
-            className="w-full sm:w-auto bg-white text-primary hover:bg-gray-50"
+            className="w-full sm:w-auto bg-white text-primary hover:bg-gray-50 font-semibold"
+            style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
           >
             {primaryCtaText}
           </Button>
@@ -58,25 +59,26 @@ export function CTASection({
             variant="outline"
             size="lg"
             onClick={handleSecondaryCta}
-            className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/10"
+            className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/10 font-semibold"
+            style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
           >
             {secondaryCtaText}
           </Button>
         </div>
 
         {/* Trust indicator */}
-        <div className="mt-12 pt-8 border-t border-white/20">
-          <p className="text-sm md:text-base text-gray-100 mb-4">
+        <div className="mt-16 pt-12 border-t border-white/20">
+          <p className="text-base md:text-lg text-gray-100 mb-8 font-medium">
             ⭐ Confiado por milhões de viajantes em todo o mundo
           </p>
-          <div className="flex justify-center gap-8 flex-wrap">
+          <div className="flex justify-center gap-12 md:gap-16 flex-wrap">
             <div className="text-white">
-              <div className="font-bold text-2xl md:text-3xl">2.5M+</div>
-              <div className="text-sm text-gray-200">Viajantes</div>
+              <div className="font-bold text-3xl md:text-4xl">2.5M+</div>
+              <div className="text-sm text-gray-200 mt-2">Viajantes</div>
             </div>
             <div className="text-white">
-              <div className="font-bold text-2xl md:text-3xl">150+</div>
-              <div className="text-sm text-gray-200">Destinos</div>
+              <div className="font-bold text-3xl md:text-4xl">150+</div>
+              <div className="text-sm text-gray-200 mt-2">Destinos</div>
             </div>
             <div className="text-white">
               <div className="font-bold text-2xl md:text-3xl">4.8★</div>

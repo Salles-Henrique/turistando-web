@@ -39,14 +39,14 @@ export function HeroSection({
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-4xl px-4 sm:px-6 md:px-8 text-center">
+      <div className="relative z-10 w-full max-w-5xl px-4 sm:px-6 md:px-8 text-center">
         {/* Title */}
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
           {title}
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 md:mb-12 max-w-2xl mx-auto">
+        <p className="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-12 md:mb-16 max-w-3xl mx-auto font-medium leading-relaxed">
           {subtitle}
         </p>
 
@@ -55,7 +55,8 @@ export function HeroSection({
           variant="primary"
           size="lg"
           onClick={handleCTAClick}
-          className="sm:text-lg"
+          className="sm:text-lg font-semibold"
+          style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
         >
           {ctaText}
         </Button>

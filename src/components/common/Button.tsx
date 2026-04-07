@@ -63,8 +63,8 @@ export function Button({
   const sizes: Record<ButtonSize, string> = {
     sm: 'px-4 py-1.5 text-sm',
     md: 'px-6 py-2.5 text-base',
-    lg: 'px-8 py-3 text-lg',
-    xl: 'px-10 py-4 text-lg',
+    lg: 'px-32 py-4 text-lg min-w-fit',
+    xl: 'px-40 py-5 text-lg min-w-fit',
   };
 
   return (

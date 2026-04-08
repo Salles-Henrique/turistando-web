@@ -55,7 +55,7 @@ export function DestinationCard({ destination, onViewDetails }: DestinationCardP
       {/* Card Content */}
       <CardBody>
         {/* Title */}
-        <h3 className="text-lg font-heading font-bold text-primary pl-4 border-l-4 border-primary mb-2 line-clamp-2">
+        <h3 className="text-lg font-heading font-bold text-gray-900 mb-2 line-clamp-2">
           {destination.title}
         </h3>
 

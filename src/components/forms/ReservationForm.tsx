@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/common/Button';
+import { Input } from '@/components/common/Input';
+import { Select } from '@/components/common/Select';
 
 interface FormData {
   name: string;
@@ -182,7 +184,7 @@ export function ReservationForm({
   if (isSuccess && successData) {
     return (
       <div className={`${className}`}>
-        <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent rounded-lg p-8 text-center">
+        <div className="bg-linear-to-br from-accent/10 to-primary/10 border-2 border-accent rounded-lg p-8 text-center">
           {/* Success Icon */}
           <div className="text-6xl mb-4 animate-bounce">✓</div>
 
@@ -253,127 +255,65 @@ export function ReservationForm({
     <div className={`${className}`}>
       <form onSubmit={handleSubmit} className="space-y-5" noValidate>
         {/* Name Field */}
-        <div>
-          <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-            Nome Completo <span className="text-secondary">*</span>
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Ex: João Silva"
-            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all ${
-              errors.name
-                ? 'border-red-500 bg-red-50 focus:ring-red-200'
-                : 'border-gray-300 bg-white'
-            }`}
-            disabled={isSubmitting}
-            aria-invalid={!!errors.name}
-            aria-describedby={errors.name ? 'name-error' : undefined}
-          />
-          {errors.name && (
-            <p id="name-error" className="text-red-600 text-sm mt-1 flex items-center gap-1">
-              <span>⚠</span> {errors.name}
-            </p>
-          )}
-        </div>
+        <Input
+          id="name"
+          name="name"
+          type="text"
+          label="Nome Completo"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Ex: João Silva"
+          error={errors.name}
+          disabled={isSubmitting}
+          required
+        />
 
         {/* Email Field */}
-        <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
-            Email <span className="text-secondary">*</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="seu@email.com"
-            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all ${
-              errors.email
-                ? 'border-red-500 bg-red-50 focus:ring-red-200'
-                : 'border-gray-300 bg-white'
-            }`}
-            disabled={isSubmitting}
-            aria-invalid={!!errors.email}
-            aria-describedby={errors.email ? 'email-error' : undefined}
-          />
-          {errors.email && (
-            <p id="email-error" className="text-red-600 text-sm mt-1 flex items-center gap-1">
-              <span>⚠</span> {errors.email}
-            </p>
-          )}
-        </div>
+        <Input
+          id="email"
+          name="email"
+          type="email"
+          label="Email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="seu@email.com"
+          error={errors.email}
+          disabled={isSubmitting}
+          required
+        />
 
         {/* Travel Date Field */}
-        <div>
-          <label htmlFor="travelDate" className="block text-sm font-semibold text-gray-900 mb-2">
-            Data da Viagem <span className="text-secondary">*</span>
-          </label>
-          <input
-            type="date"
-            id="travelDate"
-            name="travelDate"
-            value={formData.travelDate}
-            onChange={handleChange}
-            min={getMinDate()}
-            max={getMaxDate()}
-            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all ${
-              errors.travelDate
-                ? 'border-red-500 bg-red-50 focus:ring-red-200'
-                : 'border-gray-300 bg-white'
-            }`}
-            disabled={isSubmitting}
-            aria-invalid={!!errors.travelDate}
-            aria-describedby={errors.travelDate ? 'travelDate-error' : undefined}
-          />
-          {errors.travelDate && (
-            <p id="travelDate-error" className="text-red-600 text-sm mt-1 flex items-center gap-1">
-              <span>⚠</span> {errors.travelDate}
-            </p>
-          )}
-          <p className="text-xs text-gray-500 mt-1">
-            Mínimo hoje, máximo 1 ano a partir de hoje
-          </p>
-        </div>
+        <Input
+          id="travelDate"
+          name="travelDate"
+          type="date"
+          label="Data da Viagem"
+          value={formData.travelDate}
+          onChange={handleChange}
+          min={getMinDate()}
+          max={getMaxDate()}
+          error={errors.travelDate}
+          helperText="Mínimo hoje, máximo 1 ano a partir de hoje"
+          disabled={isSubmitting}
+          required
+        />
 
         {/* Number of People Field */}
-        <div>
-          <label htmlFor="numberOfPeople" className="block text-sm font-semibold text-gray-900 mb-2">
-            Número de Pessoas <span className="text-secondary">*</span>
-          </label>
-          <select
-            id="numberOfPeople"
-            name="numberOfPeople"
-            value={formData.numberOfPeople}
-            onChange={handleChange}
-            className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all ${
-              errors.numberOfPeople
-                ? 'border-red-500 bg-red-50 focus:ring-red-200'
-                : 'border-gray-300 bg-white'
-            }`}
-            disabled={isSubmitting}
-            aria-invalid={!!errors.numberOfPeople}
-            aria-describedby={errors.numberOfPeople ? 'numberOfPeople-error' : undefined}
-          >
-            {[...Array(50)].map((_, i) => (
-              <option key={i + 1} value={i + 1}>
-                {i + 1} {i === 0 ? 'pessoa' : 'pessoas'}
-              </option>
-            ))}
-          </select>
-          {errors.numberOfPeople && (
-            <p
-              id="numberOfPeople-error"
-              className="text-red-600 text-sm mt-1 flex items-center gap-1"
-            >
-              <span>⚠</span> {errors.numberOfPeople}
-            </p>
-          )}
-        </div>
+        <Select
+          id="numberOfPeople"
+          name="numberOfPeople"
+          label="Número de Pessoas"
+          placeholder="Selecione o número de pessoas"
+          value={formData.numberOfPeople}
+          onChange={handleChange}
+          error={errors.numberOfPeople}
+          disabled={isSubmitting}
+          required
+          options={[...Array(50)].map((_, i) => ({
+            label: `${i + 1} ${i === 0 ? 'pessoa' : 'pessoas'}`,
+            value: i + 1,
+          }))}
+        />
 
         {/* Submit Button */}
         <Button

@@ -111,7 +111,7 @@ export function CardTitle({
   return (
     <h3
       className={`
-        text-xl font-bold text-gray-900
+        text-lx font-bold text-primary
         ${className}
       `}
       {...props}

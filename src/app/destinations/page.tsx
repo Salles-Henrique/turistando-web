@@ -148,7 +148,7 @@ export default function DestinationsPage() {
             <div className="space-y-6 sticky top-20">
               {/* Search */}
               <div>
-                <h3 className="font-heading text-lg font-bold text-primary pl-4 border-l-4 border-primary mb-4">
+                <h3 className="font-heading text-lg font-bold text-red-600 mb-4">
                   Buscar
                 </h3>
                 <input
@@ -162,7 +162,7 @@ export default function DestinationsPage() {
 
               {/* Sort */}
               <div>
-                <h3 className="font-heading text-lg font-bold text-primary pl-4 border-l-4 border-primary mb-4">
+                <h3 className="font-heading text-lg font-bold text-red-600 mb-4">
                   Ordenar por
                 </h3>
                 <select
@@ -179,7 +179,7 @@ export default function DestinationsPage() {
 
               {/* Price Range Filter */}
               <div>
-                <h3 className="font-heading text-lg font-bold text-primary pl-4 border-l-4 border-primary mb-4">
+                <h3 className="font-heading text-lg font-bold text-red-600 mb-4">
                   Preço (R$)
                 </h3>
                 <div className="space-y-3">
@@ -220,7 +220,7 @@ export default function DestinationsPage() {
 
               {/* Category Filter */}
               <div>
-                <h3 className="font-heading text-lg font-bold text-primary pl-4 border-l-4 border-primary mb-4">
+                <h3 className="font-heading text-lg font-bold text-red-600 mb-4">
                   Tipo de Viagem
                 </h3>
                 <div className="space-y-2">
@@ -243,7 +243,7 @@ export default function DestinationsPage() {
 
               {/* Country Filter */}
               <div>
-                <h3 className="font-heading text-lg font-bold text-primary pl-4 border-l-4 border-primary mb-4">
+                <h3 className="font-heading text-lg font-bold text-red-600 mb-4">
                   País
                 </h3>
                 <div className="space-y-2 max-h-96 overflow-y-auto">
@@ -283,7 +283,7 @@ export default function DestinationsPage() {
             {/* Results Counter */}
             <div className="mb-6 flex items-center justify-between">
               <div>
-                <h2 className="text-2xl font-bold text-primary pl-4 border-l-4 border-primary">
+                <h2 className="text-2xl font-bold text-red-600">
                   {filteredDestinations.length} destinos encontrados
                 </h2>
                 {hasActiveFilters && (
@@ -309,7 +309,7 @@ export default function DestinationsPage() {
               // No results state
               <div className="flex flex-col items-center justify-center py-20 text-center">
                 <div className="text-6xl mb-4">🌍</div>
-                <h3 className="text-2xl font-bold text-primary pl-4 border-l-4 border-primary mb-2">
+                <h3 className="text-2xl font-bold text-red-600 mb-2">
                   Nenhum destino encontrado
                 </h3>
                 <p className="text-gray-600 mb-6 max-w-md">

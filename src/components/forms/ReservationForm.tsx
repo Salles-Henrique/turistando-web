@@ -21,6 +21,7 @@ interface FormErrors {
 
 interface ReservationFormProps {
   destinationTitle?: string;
+  numberOfTravelers?: number;
   onSuccess?: (data: FormData) => void;
   className?: string;
 }
@@ -36,6 +37,7 @@ interface ReservationFormProps {
  */
 export function ReservationForm({
   destinationTitle = 'this destination',
+  numberOfTravelers = 1,
   onSuccess,
   className = '',
 }: ReservationFormProps) {
@@ -43,7 +45,7 @@ export function ReservationForm({
     name: '',
     email: '',
     travelDate: '',
-    numberOfPeople: '1',
+    numberOfPeople: String(numberOfTravelers),
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
@@ -153,7 +155,7 @@ export function ReservationForm({
           name: '',
           email: '',
           travelDate: '',
-          numberOfPeople: '1',
+          numberOfPeople: String(numberOfTravelers),
         });
         setIsSuccess(false);
         setSuccessData(null);

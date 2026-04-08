@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/common/Button';
+import { NumberInput } from '@/components/common/NumberInput';
 import { ReservationForm } from '@/components/forms/ReservationForm';
 import { type Destination } from '@/data/destinations';
 import { useState } from 'react';
@@ -238,33 +239,20 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
 
               {/* Travelers Selector */}
               <div className="mb-6 pb-6 border-b border-gray-200">
-                <label className="block text-sm font-semibold text-gray-900 mb-3">
-                  Número de Viajantes
-                </label>
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setTravelers(Math.max(1, travelers - 1))}
-                    className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors"
-                  >
-                    −
-                  </button>
-                  <input
-                    type="number"
-                    min="1"
-                    max="10"
-                    value={travelers}
-                    onChange={(e) =>
-                      setTravelers(Math.max(1, parseInt(e.target.value) || 1))
-                    }
-                    className="flex-1 text-center px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                  <button
-                    onClick={() => setTravelers(Math.min(10, travelers + 1))}
-                    className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors"
-                  >
-                    +
-                  </button>
-                </div>
+                <NumberInput
+                  id="travelers"
+                  label="Número de Viajantes"
+                  type="number"
+                  min={1}
+                  max={10}
+                  value={travelers}
+                  onChange={(e) =>
+                    setTravelers(Math.max(1, parseInt(e.target.value) || 1))
+                  }
+                  onIncrement={() => setTravelers(Math.min(10, travelers + 1))}
+                  onDecrement={() => setTravelers(Math.max(1, travelers - 1))}
+                  showControls={true}
+                />
               </div>
 
               {/* Total Price */}
@@ -281,6 +269,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
               {/* Reserve Button and Form */}
               <ReservationForm
                 destinationTitle={destination.title}
+                numberOfTravelers={travelers}
                 onSuccess={(data) => {
                   console.log('Reservation submitted:', data);
                 }}

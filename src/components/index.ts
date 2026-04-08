@@ -5,6 +5,7 @@ export { Footer } from './layout/Footer';
 // Common components
 export { Button, ButtonGroup } from './common/Button';
 export { Input } from './common/Input';
+export { NumberInput } from './common/NumberInput';
 export { Select } from './common/Select';
 export {
   Card,

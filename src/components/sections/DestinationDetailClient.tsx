@@ -270,6 +270,7 @@ export function DestinationDetailClient({ destination }: DestinationDetailClient
               <ReservationForm
                 destinationTitle={destination.title}
                 numberOfTravelers={travelers}
+                onNumberOfPeopleChange={(value) => setTravelers(value)}
                 onSuccess={(data) => {
                   console.log('Reservation submitted:', data);
                 }}

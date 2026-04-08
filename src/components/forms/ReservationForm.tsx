@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/common/Button';
 import { Input } from '@/components/common/Input';
 import { Select } from '@/components/common/Select';
@@ -22,6 +22,7 @@ interface FormErrors {
 interface ReservationFormProps {
   destinationTitle?: string;
   numberOfTravelers?: number;
+  onNumberOfPeopleChange?: (value: number) => void;
   onSuccess?: (data: FormData) => void;
   className?: string;
 }
@@ -38,6 +39,7 @@ interface ReservationFormProps {
 export function ReservationForm({
   destinationTitle = 'this destination',
   numberOfTravelers = 1,
+  onNumberOfPeopleChange,
   onSuccess,
   className = '',
 }: ReservationFormProps) {
@@ -52,6 +54,16 @@ export function ReservationForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [successData, setSuccessData] = useState<FormData | null>(null);
+
+  /**
+   * Sincronizar numberOfPeople quando numberOfTravelers mudar
+   */
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      numberOfPeople: String(numberOfTravelers),
+    }));
+  }, [numberOfTravelers]);
 
   /**
    * Validation Logic
@@ -122,6 +134,11 @@ export function ReservationForm({
         ...prev,
         [name]: undefined,
       }));
+    }
+    // Sincronizar numberOfPeople com o parent quando mudar
+    if (name === 'numberOfPeople' && onNumberOfPeopleChange) {
+      const numValue = parseInt(value) || 1;
+      onNumberOfPeopleChange(numValue);
     }
   };
 

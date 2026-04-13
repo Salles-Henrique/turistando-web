@@ -153,7 +153,7 @@ export function SearchForm() {
       </div>
 
       {/* Line 2: Insurance checkbox and Search Button */}
-      <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
+      <div className="flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
         <label className="flex items-center gap-3 cursor-pointer">
           <input
             type="checkbox"
@@ -165,15 +165,16 @@ export function SearchForm() {
             Viagem com seguro?
           </span>
         </label>
+        {/*Spacer*/}
 
-        <div className="w-full md:w-auto">
-          <button
-            type="submit"
-            className="w-full md:w-auto px-12 py-4 bg-primary text-white font-semibold text-lg rounded-lg hover:bg-primary-dark hover:shadow-lg transition-all border border-primary"
-          >
-            Buscar
-          </button>
-        </div>
+        <button
+          type="submit"
+          className="px-16 py-3 bg-primary text-white font-semibold text-lg rounded-lg hover:bg-primary-dark hover:shadow-lg transition-all border border-primary"
+        >
+          <div className="flex items-center justify-center px-2">
+            <span>Buscar</span>
+          </div>
+        </button>
       </div>
     </form>
   );

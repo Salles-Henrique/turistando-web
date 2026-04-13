@@ -34,7 +34,7 @@ export function HeroSection() {
         </div>
 
         {/* Trust Indicator */}
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white">
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white mb-12">
           <div className="flex items-center gap-2">
             <span className="text-2xl">✈️</span>
             <div>
@@ -62,7 +62,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
         <div className="animate-bounce">
           <svg
             className="w-6 h-6 text-white"

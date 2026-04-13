@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { Suspense, useState, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { destinationsData, getUniqueLocations, getCategories, getPriceRange, type Destination } from '@/data/destinations';
 import { DestinationCard } from '@/components/sections/DestinationCard';
@@ -10,7 +10,7 @@ import { Button } from '@/components/common/Button';
  * Search Results Page
  * Displays filtered travel destinations based on search parameters
  */
-export default function SearchPage() {
+function SearchPageContent() {
   const searchParams = useSearchParams();
   
   const origin = searchParams.get('origin') || '';
@@ -375,5 +375,13 @@ export default function SearchPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Carregando...</div>}>
+      <SearchPageContent />
+    </Suspense>
   );
 }

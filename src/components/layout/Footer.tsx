@@ -91,16 +91,10 @@ export function Footer() {
               &copy; {currentYear} Turistando. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <span className="sr-only">Facebook</span>
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8.29 20v-7.21H5.5V9.25h2.79V7.16c0-2.77 1.69-4.28 4.16-4.28 1.18 0 2.2.09 2.49.13v2.89h-1.71c-1.34 0-1.6.64-1.6 1.57v2.05h3.2l-.42 3.54h-2.78V20" />
-                </svg>
-              </a>
               <a href="https://www.linkedin.com/in/seduza-cosm%C3%A9ticos-ab072b373/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <span className="sr-only">Linkedin</span>
+                <span className="sr-only">LinkedIn</span>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 002.856-3.515 10 10 0 01-2.737.737 4.5 4.5 0 001.971-2.48c-.951.564-2.005.974-3.127 1.195a4.482 4.482 0 00-7.647 4.087 12.75 12.75 0 01-9.263-4.693 4.5 4.5 0 001.389 5.987 4.48 4.48 0 01-2.033-.559v.057a4.482 4.482 0 003.597 4.393 4.485 4.485 0 01-2.026.077 4.487 4.487 0 004.186 3.111 8.987 8.987 0 01-6.732 2.329 12.72 12.72 0 006.937 2.031" />
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.75 1.75 0 01-1.8 1.75zM19 19h-3v-4.5c0-1.336-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939V19h-3v-9h2.881v1.227h.061c.402-.762 1.383-1.563 2.848-1.563 3.046 0 3.605 2.007 3.605 4.622V19z" />
                 </svg>
               </a>
               <a href="https://www.instagram.com/turistandooficial_/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">

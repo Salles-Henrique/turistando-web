@@ -49,7 +49,7 @@ export function CTASection({
             variant="primary"
             size="lg"
             onClick={handlePrimaryCta}
-            className="w-full sm:w-auto bg-white text-primary hover:bg-gray-50 font-semibold"
+            className="w-full sm:w-auto bg-white text-black hover:bg-gray-100 font-semibold"
             style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
           >
             {primaryCtaText}
@@ -59,7 +59,7 @@ export function CTASection({
             variant="outline"
             size="lg"
             onClick={handleSecondaryCta}
-            className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/10 font-semibold"
+            className="w-full sm:w-auto border-2 border-white text-white hover:bg-white/20 font-semibold"
             style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
           >
             {secondaryCtaText}

@@ -3,6 +3,20 @@
  * Sample travel package data for the Destinations page
  */
 
+// Brazilian departure cities for search form
+export const departureCities = [
+  'São Paulo - SP',
+  'Rio de Janeiro - RJ',
+  'Belo Horizonte - MG',
+  'Brasília - DF',
+  'Salvador - BA',
+  'Recife - PE',
+  'Fortaleza - CE',
+  'Manaus - AM',
+  'Curitiba - PR',
+  'Porto Alegre - RS',
+];
+
 export interface Destination {
   id: string;
   title: string;

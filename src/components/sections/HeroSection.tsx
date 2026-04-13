@@ -1,68 +1,67 @@
 'use client';
 
-import { Button } from '@/components/common/Button';
-
-interface HeroSectionProps {
-  backgroundImage?: string;
-  title: string;
-  subtitle: string;
-  ctaText?: string;
-}
+import { destinationsData } from '@/data/destinations';
+import { SearchForm } from '@/components/forms/SearchForm';
 
 /**
  * HeroSection Component
- * Full-width hero section with background image, title, subtitle, and CTA button.
- * Responsive design with proper overlay for text readability on mobile and desktop.
+ * Full-width hero section with search form for travel bookings.
+ * Features dynamic destination count and call-to-action.
  */
-export function HeroSection({
-  backgroundImage = 'https://images.unsplash.com/photo-1519707267537-b85faf00021b?w=1200&h=600&fit=crop',
-  title,
-  subtitle,
-  ctaText = 'Explorar destinos',
-}: HeroSectionProps) {
-  const handleCTAClick = () => {
-    const element = document.getElementById('featured-destinations');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+export function HeroSection() {
+  const destinationCount = destinationsData.length;
 
   return (
-    <section
-      className="relative w-full min-h-screen md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url('${backgroundImage}')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-      }}
-    >
-      {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+    <section className="relative w-full min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-primary via-primary-600 to-accent">
+      {/* Overlay for depth */}
+      <div className="absolute inset-0 opacity-10 bg-pattern" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-5xl px-4 sm:px-6 md:px-8 text-center">
+      <div className="relative z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8 text-center">
         {/* Title */}
-        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-          {title}
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+          Suas Viagens, Seus Jeitos, Suas Histórias
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-12 md:mb-16 max-w-3xl mx-auto font-medium leading-relaxed">
-          {subtitle}
+        {/* Subtitle with dynamic destination count */}
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
+          Explore {destinationCount}+ destinos incríveis e crie memórias inesquecíveis com a Turistando
         </p>
 
-        {/* CTA Button */}
-        <Button
-          variant="primary"
-          size="lg"
-          onClick={handleCTAClick}
-          className="sm:text-lg font-semibold"
-          style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
-        >
-          {ctaText}
-        </Button>
+        {/* Search Form */}
+        <div className="mb-16">
+          <SearchForm />
+        </div>
+
+        {/* Trust Indicator */}
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">✈️</span>
+            <div>
+              <p className="font-bold text-lg">{destinationCount}+</p>
+              <p className="text-sm text-gray-200">Destinos</p>
+            </div>
+          </div>
+          <div className="hidden sm:block w-px h-12 bg-white/30" />
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">⭐</span>
+            <div>
+              <p className="font-bold text-lg">4.8★</p>
+              <p className="text-sm text-gray-200">Avaliação</p>
+            </div>
+          </div>
+          <div className="hidden sm:block w-px h-12 bg-white/30" />
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">🏷️</span>
+            <div>
+              <p className="font-bold text-lg">Até 40%</p>
+              <p className="text-sm text-gray-200">Grandes descontos</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Scroll indicator (optional) */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
         <div className="animate-bounce">
           <svg

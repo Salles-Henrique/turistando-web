@@ -50,11 +50,7 @@ export default function HomePage() {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <HeroSection
-        title="Explore o Mundo com Turistando"
-        subtitle="Descubra destinos incríveis, faça reservas seguras e crie memórias inesquecíveis"
-        ctaText="Explorar destinos"
-      />
+      <HeroSection />
 
       {/* Featured Destinations Section */}
       <div id="featured-destinations">

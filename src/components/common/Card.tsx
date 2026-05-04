@@ -40,22 +40,22 @@ export function Card({
   children,
   ...props
 }: CardProps) {
-  const baseStyles = 'rounded-lg overflow-hidden transition-all duration-200';
+  const baseStyles = 'rounded-xl overflow-hidden transition-all duration-300';
 
   const variants: Record<CardVariant, string> = {
     default:
-      'bg-white border border-gray-200 shadow-sm',
+      'bg-white border border-gray-100 shadow-md',
     elevated:
-      'bg-white shadow-lg',
+      'bg-white shadow-lg hover:shadow-2xl',
     outlined:
-      'bg-white border-2 border-primary',
+      'bg-white border-2 border-primary shadow-sm',
     accent:
-      'bg-gradient-to-br from-accent/10 to-primary/5 border border-accent/20',
+      'bg-gradient-to-br from-accent/10 to-primary/5 border border-accent/20 shadow-md',
   };
 
   const interactiveStyles =
     hoverable || clickable
-      ? 'hover:shadow-lg hover:border-primary/50 cursor-pointer'
+      ? 'hover:shadow-2xl hover:-translate-y-1 cursor-pointer'
       : '';
 
   return (
@@ -89,7 +89,7 @@ export function CardHeader({
   return (
     <div
       className={`
-        px-6 py-4
+        px-6 py-5
         ${borderColor ? 'border-b border-gray-100' : ''}
         ${className}
       `}
@@ -111,7 +111,7 @@ export function CardTitle({
   return (
     <h3
       className={`
-        text-lx font-bold text-primary
+        text-lg font-bold text-gray-900 leading-tight
         ${className}
       `}
       {...props}
@@ -132,7 +132,7 @@ export function CardSubtitle({
   return (
     <p
       className={`
-        text-sm text-gray-500 mt-1
+        text-sm text-gray-600 mt-2 leading-relaxed
         ${className}
       `}
       {...props}
@@ -158,7 +158,7 @@ export function CardBody({
   return (
     <div
       className={`
-        ${noPadding ? '' : 'px-6 py-4'}
+        ${noPadding ? '' : 'px-6 py-5'}
         ${className}
       `}
       {...props}
@@ -184,7 +184,7 @@ export function CardFooter({
   return (
     <div
       className={`
-        px-6 py-4
+        px-6 py-5
         ${divider ? 'border-t border-gray-100' : ''}
         ${className}
       `}

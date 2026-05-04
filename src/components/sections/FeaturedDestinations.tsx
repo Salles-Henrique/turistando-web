@@ -44,20 +44,20 @@ export function FeaturedDestinations({
   };
 
   return (
-    <section className="w-full py-20 md:py-28 lg:py-32 bg-white">
+    <section className="w-full py-24 md:py-32 lg:py-40 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20 lg:mb-24">
-          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight tracking-tight">
+        <div className="text-center mb-20 md:mb-28 lg:mb-32">
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-8 leading-tight tracking-tight">
             {title}
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-medium">
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-medium leading-relaxed">
             {subtitle}
           </p>
         </div>
 
         {/* Destinations Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-12">
           {destinations.map((destination) => (
             <Card
               key={destination.id}

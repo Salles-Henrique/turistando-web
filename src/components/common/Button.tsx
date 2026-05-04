@@ -44,27 +44,27 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 hover:scale-[1.02] hover:-translate-y-0.5';
+    'inline-flex items-center justify-center gap-2 font-semibold transition-all duration-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 hover:scale-[1.02] hover:-translate-y-1';
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      'bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-md hover:shadow-xl hover:shadow-primary/30',
+      'bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-lg hover:shadow-2xl hover:shadow-primary/40',
     secondary:
-      'bg-secondary text-gray-900 hover:bg-secondary-dark focus:ring-secondary shadow-md hover:shadow-xl hover:shadow-secondary/30',
+      'bg-secondary text-gray-900 hover:bg-secondary-dark focus:ring-secondary shadow-lg hover:shadow-2xl hover:shadow-secondary/40',
     accent:
-      'bg-accent text-white hover:bg-accent-dark focus:ring-accent shadow-md hover:shadow-xl hover:shadow-accent/30',
+      'bg-accent text-white hover:bg-accent-dark focus:ring-accent shadow-lg hover:shadow-2xl hover:shadow-accent/40',
     support:
-      'bg-support text-white hover:bg-support-dark focus:ring-support shadow-md hover:shadow-xl hover:shadow-support/30',
+      'bg-support text-white hover:bg-support-dark focus:ring-support shadow-lg hover:shadow-2xl hover:shadow-support/40',
     outline:
-      'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary hover:shadow-md',
-    ghost: 'text-primary hover:bg-primary/10 focus:ring-primary hover:shadow-sm',
+      'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary hover:shadow-lg',
+    ghost: 'text-primary hover:bg-primary/10 focus:ring-primary hover:shadow-md',
   };
 
   const sizes: Record<ButtonSize, string> = {
-    sm: 'px-4 py-1.5 text-sm',
-    md: 'px-6 py-2.5 text-base',
-    lg: 'px-32 py-4 text-lg min-w-fit',
-    xl: 'px-40 py-5 text-lg min-w-fit',
+    sm: 'px-4 py-2 text-sm font-medium',
+    md: 'px-8 py-3 text-base font-medium',
+    lg: 'px-10 py-4 text-lg font-semibold',
+    xl: 'px-12 py-5 text-lg font-semibold',
   };
 
   return (

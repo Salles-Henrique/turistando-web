@@ -201,6 +201,51 @@ export const destinationsData: Destination[] = [
     duration: 5,
     category: 'Culture',
   },
+  {
+    id: '13',
+    title: 'Especial dia das Mães',
+    location: 'Campos do Jordão - SP',
+    country: 'Brazil',
+    description: 'Prepare-se para dias inesquecíveis entre montanhas, arquitetura europeia, o aconchego de uma lareira e o sabor irresistível de um bom fondue.',
+    image: 'https://blog.nacionalinn.com.br/wp-content/uploads/2022/10/O-que-fazer-em-Campos-do-Jordao-50-sugestoes.png',
+    price: 765,
+    originalPrice: 950,
+    rating: 4.2,
+    reviews: 367,
+    duration: 3,
+    category: 'Mountain',
+  },
+
+   {
+    id: '14',
+    title: 'Show da Shakira',
+    location: 'Copacabana - SP',
+    country: 'Brazil',
+    description: 'O cenário perfeito do Rio de Janeiro com a trilha sonora de uma das maiores artistas do planeta. Dias de sol, mar e muita música boa esperam por você!',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Praia_de_Copacabana_-_Rio_de_Janeiro%2C_Brasil.jpg',
+    price: 1089,
+    originalPrice: 1346,
+    rating: 4.7,
+    reviews: 439,
+    duration: 4,
+    category: 'Beach',
+  },
+
+  {
+    id: '15',
+    title: 'Aventura nas Montanhas',
+    location: 'Serra Negra - SP',
+    country: 'Brazil',
+    description: 'Prepare-se para desbravar trilhas, curtir visuais incríveis do alto das montanhas e viver momentos cheios de adrenalina e contato com a natureza.',
+    image: 'https://www.essemundoenosso.com.br/wp-content/uploads/2025/04/o-que-fazer-em-serra-negra-cristo-destaque.jpg',
+    price: 678,
+    originalPrice: 845,
+    rating: 4.0,
+    reviews: 572,
+    duration: 3,
+    category: 'Adventure',
+  },
+  
 ];
 
 // Get unique locations and categories for filters

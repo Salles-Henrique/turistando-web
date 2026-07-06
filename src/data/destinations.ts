@@ -33,7 +33,7 @@ export interface Destination {
 }
 
 export const destinationsData: Destination[] = [
-  {
+  /*{
     id: '1',
     title: 'Pirâmides de Gizé',
     location: 'Gizé',
@@ -200,9 +200,10 @@ export const destinationsData: Destination[] = [
     reviews: 512,
     duration: 5,
     category: 'Culture',
-  },
+  },*/
+  
   {
-    id: '13',
+    id: '1',
     title: 'Especial dia das Mães',
     location: 'Campos do Jordão - SP',
     country: 'Brazil',
@@ -217,7 +218,7 @@ export const destinationsData: Destination[] = [
   },
 
    {
-    id: '14',
+    id: '2',
     title: 'Show da Shakira',
     location: 'Copacabana - SP',
     country: 'Brazil',
@@ -232,7 +233,7 @@ export const destinationsData: Destination[] = [
   },
 
   {
-    id: '15',
+    id: '3',
     title: 'Aventura nas Montanhas',
     location: 'Serra Negra - SP',
     country: 'Brazil',
